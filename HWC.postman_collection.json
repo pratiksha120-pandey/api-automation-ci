@@ -1,0 +1,926 @@
+{
+	"info": {
+		"_postman_id": "e9b33c69-19f4-44bf-bd7f-281390dc0c9f",
+		"name": "HWC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38499855"
+	},
+	"item": [
+		{
+			"name": "https://assamuat.piramalswasthya.org/common-api/user/userAuthenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": ""
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://assamuat.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://assamuat.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"mokrong\",\"password\":\"301239643d810df6765cf9f0da4a5499dc608e8571a08f023668c9ef3e08c02b5b07c8e3443125fda5f773760dea6461Au9LGflJ7T/4RFW9ra2IzQ==\",\"doLogout\":false,\"withCredentials\":true}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://assamuat.piramalswasthya.org/common-api/user/userAuthenticate",
+					"protocol": "https",
+					"host": [
+						"assamuat",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"common-api",
+						"user",
+						"userAuthenticate"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://assamuat.piramalswasthya.org/common-api/user/userAuthenticate' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization;' \\\r\n  -H 'content-type: application/json' \\\r\n  -H 'origin: https://assamuat.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://assamuat.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"userName\":\"mokrong\",\"password\":\"301239643d810df6765cf9f0da4a5499dc608e8571a08f023668c9ef3e08c02b5b07c8e3443125fda5f773760dea6461Au9LGflJ7T/4RFW9ra2IzQ==\",\"doLogout\":false,\"withCredentials\":true}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://assamuat.piramalswasthya.org/hwc-api/registrar/registrarBeneficaryRegistrationNew",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "4c982b206687c49483e7f34f790f5ed4e909ded05d9b0b100d2e0e3ff680413c"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://assamuat.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://assamuat.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4OTIzNThiZi01YmFjLTQ0ZjUtOTZlZS03M2FjNzRlNGY3MTQiLCJpYXQiOjE3Njc4NDk0MTcsImV4cCI6MTc2Nzg3ODIxN30.mdBosdP1dLszHPjF3TTBAsw26OYBuBSS8C7W7xrzfEhTCgTat-VRMBT6hQiUxuCJefM3YSONckhGn2p-imWniA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"age\":\"32\",\"ageAtMarriage\":null,\"genderID\":2,\"firstName\":\"Pratiksha\",\"genderName\":\"Female\",\"ageUnits\":\"Years\",\"dOB\":\"1994-01-08T05:41:14.309Z\",\"maritalStatusName\":\"Married\",\"image\":null,\"dob\":\"1994-01-08T05:41:14.309Z\",\"parkingPlaceID\":33,\"FatherName\":\"Ppandey\",\"healthIdNumber\":null,\"beneficiaryConsent\":true,\"i_bendemographics\":{\"monthlyFamilyIncome\":null,\"occupationName\":null,\"communityName\":null,\"countryID\":1,\"countryName\":\"India\",\"stateID\":5,\"stateName\":\"Assam\",\"districtID\":50,\"districtName\":\"Golaghat\",\"blockID\":6431,\"blockName\":\"K.B.ALI\",\"districtBranchID\":null,\"districtBranchName\":null,\"zoneID\":null,\"zoneName\":null,\"parkingPlaceName\":null,\"servicePointID\":4020,\"servicePointName\":\"MokrongTE\",\"habitation\":null,\"pinCode\":null,\"addressLine1\":null,\"addressLine2\":null,\"addressLine3\":null,\"religionName\":null},\"abha\":null,\"benPhoneMaps\":[{\"phoneTypeID\":null,\"vanID\":295,\"parkingPlaceID\":33,\"createdBy\":\"Mokrong\"}],\"vanID\":295,\"createdBy\":\"Mokrong\",\"providerServiceMapID\":1717,\"providerServiceMapId\":1717}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://assamuat.piramalswasthya.org/hwc-api/registrar/registrarBeneficaryRegistrationNew",
+					"protocol": "https",
+					"host": [
+						"assamuat",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"registrar",
+						"registrarBeneficaryRegistrationNew"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://assamuat.piramalswasthya.org/hwc-api/registrar/registrarBeneficaryRegistrationNew' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: 4c982b206687c49483e7f34f790f5ed4e909ded05d9b0b100d2e0e3ff680413c' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4OTIzNThiZi01YmFjLTQ0ZjUtOTZlZS03M2FjNzRlNGY3MTQiLCJpYXQiOjE3Njc4NDk0MTcsImV4cCI6MTc2Nzg3ODIxN30.mdBosdP1dLszHPjF3TTBAsw26OYBuBSS8C7W7xrzfEhTCgTat-VRMBT6hQiUxuCJefM3YSONckhGn2p-imWniA' \\\r\n  -H 'origin: https://assamuat.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://assamuat.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"age\":\"32\",\"ageAtMarriage\":null,\"genderID\":2,\"firstName\":\"Pratiksha\",\"genderName\":\"Female\",\"ageUnits\":\"Years\",\"dOB\":\"1994-01-08T05:41:14.309Z\",\"maritalStatusName\":\"Married\",\"image\":null,\"dob\":\"1994-01-08T05:41:14.309Z\",\"parkingPlaceID\":33,\"FatherName\":\"Ppandey\",\"healthIdNumber\":null,\"beneficiaryConsent\":true,\"i_bendemographics\":{\"monthlyFamilyIncome\":null,\"occupationName\":null,\"communityName\":null,\"countryID\":1,\"countryName\":\"India\",\"stateID\":5,\"stateName\":\"Assam\",\"districtID\":50,\"districtName\":\"Golaghat\",\"blockID\":6431,\"blockName\":\"K.B.ALI\",\"districtBranchID\":null,\"districtBranchName\":null,\"zoneID\":null,\"zoneName\":null,\"parkingPlaceName\":null,\"servicePointID\":4020,\"servicePointName\":\"MokrongTE\",\"habitation\":null,\"pinCode\":null,\"addressLine1\":null,\"addressLine2\":null,\"addressLine3\":null,\"religionName\":null},\"abha\":null,\"benPhoneMaps\":[{\"phoneTypeID\":null,\"vanID\":295,\"parkingPlaceID\":33,\"createdBy\":\"Mokrong\"}],\"vanID\":295,\"createdBy\":\"Mokrong\",\"providerServiceMapID\":1717,\"providerServiceMapId\":1717}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://assamuat.piramalswasthya.org/hwc-api/registrar/quickSearchES",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "4c982b206687c49483e7f34f790f5ed4e909ded05d9b0b100d2e0e3ff680413c"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://assamuat.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://assamuat.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4OTIzNThiZi01YmFjLTQ0ZjUtOTZlZS03M2FjNzRlNGY3MTQiLCJpYXQiOjE3Njc4NDk0MTcsImV4cCI6MTc2Nzg3ODIxN30.mdBosdP1dLszHPjF3TTBAsw26OYBuBSS8C7W7xrzfEhTCgTat-VRMBT6hQiUxuCJefM3YSONckhGn2p-imWniA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"search\":\"299344229409\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://assamuat.piramalswasthya.org/hwc-api/registrar/quickSearchES",
+					"protocol": "https",
+					"host": [
+						"assamuat",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"registrar",
+						"quickSearchES"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://assamuat.piramalswasthya.org/hwc-api/registrar/quickSearchES' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: 4c982b206687c49483e7f34f790f5ed4e909ded05d9b0b100d2e0e3ff680413c' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4OTIzNThiZi01YmFjLTQ0ZjUtOTZlZS03M2FjNzRlNGY3MTQiLCJpYXQiOjE3Njc4NDk0MTcsImV4cCI6MTc2Nzg3ODIxN30.mdBosdP1dLszHPjF3TTBAsw26OYBuBSS8C7W7xrzfEhTCgTat-VRMBT6hQiUxuCJefM3YSONckhGn2p-imWniA' \\\r\n  -H 'origin: https://assamuat.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://assamuat.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"search\":\"299344229409\"}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://assamuat.piramalswasthya.org/hwc-api/genOPD-QC-quickConsult/save/nurseData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "4c982b206687c49483e7f34f790f5ed4e909ded05d9b0b100d2e0e3ff680413c"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://assamuat.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://assamuat.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4OTIzNThiZi01YmFjLTQ0ZjUtOTZlZS03M2FjNzRlNGY3MTQiLCJpYXQiOjE3Njc4NDk0MTcsImV4cCI6MTc2Nzg3ODIxN30.mdBosdP1dLszHPjF3TTBAsw26OYBuBSS8C7W7xrzfEhTCgTat-VRMBT6hQiUxuCJefM3YSONckhGn2p-imWniA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"visitDetails\":{\"beneficiaryRegID\":\"31258599\",\"providerServiceMapID\":1717,\"visitNo\":null,\"visitReason\":\"New Chief Complaint\",\"subVisitCategory\":null,\"visitCategory\":\"General OPD (QC)\",\"pregnancyStatus\":null,\"followUpForFpMethod\":null,\"otherFollowUpForFpMethod\":null,\"sideEffects\":null,\"otherSideEffects\":null,\"IdrsOrCbac\":\"CBAC\",\"rCHID\":null,\"healthFacilityType\":null,\"healthFacilityLocation\":null,\"reportFilePath\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"fileIDs\":null,\"presentChiefComplaint\":null,\"presentChiefComplaintID\":null,\"selectedDiagnosis\":null,\"selectedProvisionalDiagnosisID\":null,\"recommendedActionPc\":null,\"remarksPc\":null,\"presentChiefComplaintView\":null,\"diseaseSummary\":null,\"diseasesummaryID\":null,\"recommendedAction\":null,\"remarks\":null,\"informationGiven\":null,\"diseaseSummaryView\":null},\"vitalsDetails\":{\"beneficiaryRegID\":\"31258599\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"weight_Kg\":\"56\",\"height_cm\":\"156\",\"waistCircumference_cm\":null,\"hipCircumference_cm\":null,\"bMI\":23,\"waistHipRatio\":null,\"headCircumference_cm\":null,\"midUpperArmCircumference_MUAC_cm\":null,\"temperature\":\"97\",\"pulseRate\":null,\"sPO2\":null,\"systolicBP_1stReading\":\"120\",\"diastolicBP_1stReading\":\"80\",\"bloodGlucose_Fasting\":null,\"bloodGlucose_Random\":null,\"bloodGlucose_2hr_PP\":null,\"respiratoryRate\":null,\"rbsTestResult\":null,\"rbsTestRemarks\":null,\"rbsCheckBox\":true,\"hemoglobin\":null,\"createdBy\":\"Mokrong\",\"frequentCoughChecked\":null,\"sputumChecked\":null,\"coughAtNightChecked\":null,\"wheezingChecked\":null,\"painInChestChecked\":null,\"shortnessOfBreathChecked\":null,\"vanID\":295,\"parkingPlaceID\":33},\"chiefComplaintList\":[{\"beneficiaryRegID\":31258599,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":\"386661006\",\"chiefComplaint\":\"Fever\",\"chiefComplaintID\":167,\"duration\":\"2\",\"unitOfDuration\":\"Days\",\"description\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33},{\"beneficiaryRegID\":31258599,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":null,\"chiefComplaint\":null,\"chiefComplaintID\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33}],\"benFlowID\":5615979,\"beneficiaryID\":335035627323,\"sessionID\":3,\"parkingPlaceID\":33,\"vanID\":295,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"tcRequest\":null,\"beneficiaryRegID\":31258599,\"providerServiceMapID\":1717}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://assamuat.piramalswasthya.org/hwc-api/genOPD-QC-quickConsult/save/nurseData",
+					"protocol": "https",
+					"host": [
+						"assamuat",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"genOPD-QC-quickConsult",
+						"save",
+						"nurseData"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://assamuat.piramalswasthya.org/hwc-api/genOPD-QC-quickConsult/save/nurseData' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: 4c982b206687c49483e7f34f790f5ed4e909ded05d9b0b100d2e0e3ff680413c' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4OTIzNThiZi01YmFjLTQ0ZjUtOTZlZS03M2FjNzRlNGY3MTQiLCJpYXQiOjE3Njc4NDk0MTcsImV4cCI6MTc2Nzg3ODIxN30.mdBosdP1dLszHPjF3TTBAsw26OYBuBSS8C7W7xrzfEhTCgTat-VRMBT6hQiUxuCJefM3YSONckhGn2p-imWniA' \\\r\n  -H 'origin: https://assamuat.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://assamuat.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"visitDetails\":{\"beneficiaryRegID\":\"31258599\",\"providerServiceMapID\":1717,\"visitNo\":null,\"visitReason\":\"New Chief Complaint\",\"subVisitCategory\":null,\"visitCategory\":\"General OPD (QC)\",\"pregnancyStatus\":null,\"followUpForFpMethod\":null,\"otherFollowUpForFpMethod\":null,\"sideEffects\":null,\"otherSideEffects\":null,\"IdrsOrCbac\":\"CBAC\",\"rCHID\":null,\"healthFacilityType\":null,\"healthFacilityLocation\":null,\"reportFilePath\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"fileIDs\":null,\"presentChiefComplaint\":null,\"presentChiefComplaintID\":null,\"selectedDiagnosis\":null,\"selectedProvisionalDiagnosisID\":null,\"recommendedActionPc\":null,\"remarksPc\":null,\"presentChiefComplaintView\":null,\"diseaseSummary\":null,\"diseasesummaryID\":null,\"recommendedAction\":null,\"remarks\":null,\"informationGiven\":null,\"diseaseSummaryView\":null},\"vitalsDetails\":{\"beneficiaryRegID\":\"31258599\",\"benVisitID\":null,\"providerServiceMapID\":1717,\"weight_Kg\":\"56\",\"height_cm\":\"156\",\"waistCircumference_cm\":null,\"hipCircumference_cm\":null,\"bMI\":23,\"waistHipRatio\":null,\"headCircumference_cm\":null,\"midUpperArmCircumference_MUAC_cm\":null,\"temperature\":\"97\",\"pulseRate\":null,\"sPO2\":null,\"systolicBP_1stReading\":\"120\",\"diastolicBP_1stReading\":\"80\",\"bloodGlucose_Fasting\":null,\"bloodGlucose_Random\":null,\"bloodGlucose_2hr_PP\":null,\"respiratoryRate\":null,\"rbsTestResult\":null,\"rbsTestRemarks\":null,\"rbsCheckBox\":true,\"hemoglobin\":null,\"createdBy\":\"Mokrong\",\"frequentCoughChecked\":null,\"sputumChecked\":null,\"coughAtNightChecked\":null,\"wheezingChecked\":null,\"painInChestChecked\":null,\"shortnessOfBreathChecked\":null,\"vanID\":295,\"parkingPlaceID\":33},\"chiefComplaintList\":[{\"beneficiaryRegID\":31258599,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":\"386661006\",\"chiefComplaint\":\"Fever\",\"chiefComplaintID\":167,\"duration\":\"2\",\"unitOfDuration\":\"Days\",\"description\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33},{\"beneficiaryRegID\":31258599,\"benVisitID\":null,\"providerServiceMapID\":1717,\"conceptID\":null,\"chiefComplaint\":null,\"chiefComplaintID\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33}],\"benFlowID\":5615979,\"beneficiaryID\":335035627323,\"sessionID\":3,\"parkingPlaceID\":33,\"vanID\":295,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"tcRequest\":null,\"beneficiaryRegID\":31258599,\"providerServiceMapID\":1717}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://assamuat.piramalswasthya.org/hwc-api/genOPD-QC-quickConsult/save/doctorData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "4c982b206687c49483e7f34f790f5ed4e909ded05d9b0b100d2e0e3ff680413c"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://assamuat.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://assamuat.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4OTIzNThiZi01YmFjLTQ0ZjUtOTZlZS03M2FjNzRlNGY3MTQiLCJpYXQiOjE3Njc4NDk0MTcsImV4cCI6MTc2Nzg3ODIxN30.mdBosdP1dLszHPjF3TTBAsw26OYBuBSS8C7W7xrzfEhTCgTat-VRMBT6hQiUxuCJefM3YSONckhGn2p-imWniA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"quickConsultation\":{\"benVisitID\":2747932,\"chiefComplaintList\":[{\"chiefComplaint\":null,\"conceptID\":null,\"description\":null,\"vanID\":295,\"parkingPlaceID\":33}],\"clinicalObservation\":\"Fever \",\"labTestOrders\":[],\"externalInvestigation\":null,\"prescription\":[{\"id\":null,\"drugID\":1265,\"drugName\":\"Paracetamol\",\"drugStrength\":\"500mg\",\"formName\":\"Tablet\",\"dose\":\"One Tab\",\"qtyPrescribed\":null,\"frequency\":\"Once Daily(OD)\",\"duration\":2,\"route\":null,\"durationView\":\"2 Day(s)\",\"unit\":\"Day(s)\",\"instructions\":null,\"sctCode\":null,\"sctTerm\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"isEDL\":true}],\"counsellingProvided\":null,\"prescriptionID\":null,\"vanID\":295,\"parkingPlaceID\":33,\"provisionalDiagnosisList\":[{\"conceptID\":\"10151000132103\",\"term\":\"Viral fever\",\"viewProvisionalDiagnosisProvided\":{\"conceptID\":\"10151000132103\",\"term\":\"Viral fever\"}},{\"conceptID\":null,\"term\":null,\"viewProvisionalDiagnosisProvided\":null}],\"refer\":{\"referredToInstituteID\":null,\"refrredToAdditionalServiceList\":null,\"referredToInstituteName\":null,\"otherReferredToInstituteName\":null,\"referralReason\":null,\"referralReasonList\":null,\"otherReferralReason\":null,\"revisitDate\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":31258599,\"benVisitID\":2747932,\"visitCode\":30029502747932,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"isSpecialist\":false},\"beneficiaryRegID\":31258599,\"providerServiceMapID\":1717,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"benFlowID\":5615979,\"beneficiaryID\":335035627323,\"doctorFlag\":1,\"nurseFlag\":9,\"pharmacist_flag\":0,\"visitCode\":30029502747932,\"sessionID\":3,\"isSpecialist\":false}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://assamuat.piramalswasthya.org/hwc-api/genOPD-QC-quickConsult/save/doctorData",
+					"protocol": "https",
+					"host": [
+						"assamuat",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"genOPD-QC-quickConsult",
+						"save",
+						"doctorData"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://assamuat.piramalswasthya.org/hwc-api/genOPD-QC-quickConsult/save/doctorData' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: 4c982b206687c49483e7f34f790f5ed4e909ded05d9b0b100d2e0e3ff680413c' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4OTIzNThiZi01YmFjLTQ0ZjUtOTZlZS03M2FjNzRlNGY3MTQiLCJpYXQiOjE3Njc4NDk0MTcsImV4cCI6MTc2Nzg3ODIxN30.mdBosdP1dLszHPjF3TTBAsw26OYBuBSS8C7W7xrzfEhTCgTat-VRMBT6hQiUxuCJefM3YSONckhGn2p-imWniA' \\\r\n  -H 'origin: https://assamuat.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://assamuat.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"quickConsultation\":{\"benVisitID\":2747932,\"chiefComplaintList\":[{\"chiefComplaint\":null,\"conceptID\":null,\"description\":null,\"vanID\":295,\"parkingPlaceID\":33}],\"clinicalObservation\":\"Fever \",\"labTestOrders\":[],\"externalInvestigation\":null,\"prescription\":[{\"id\":null,\"drugID\":1265,\"drugName\":\"Paracetamol\",\"drugStrength\":\"500mg\",\"formName\":\"Tablet\",\"dose\":\"One Tab\",\"qtyPrescribed\":null,\"frequency\":\"Once Daily(OD)\",\"duration\":2,\"route\":null,\"durationView\":\"2 Day(s)\",\"unit\":\"Day(s)\",\"instructions\":null,\"sctCode\":null,\"sctTerm\":null,\"createdBy\":\"Mokrong\",\"vanID\":295,\"parkingPlaceID\":33,\"isEDL\":true}],\"counsellingProvided\":null,\"prescriptionID\":null,\"vanID\":295,\"parkingPlaceID\":33,\"provisionalDiagnosisList\":[{\"conceptID\":\"10151000132103\",\"term\":\"Viral fever\",\"viewProvisionalDiagnosisProvided\":{\"conceptID\":\"10151000132103\",\"term\":\"Viral fever\"}},{\"conceptID\":null,\"term\":null,\"viewProvisionalDiagnosisProvided\":null}],\"refer\":{\"referredToInstituteID\":null,\"refrredToAdditionalServiceList\":null,\"referredToInstituteName\":null,\"otherReferredToInstituteName\":null,\"referralReason\":null,\"referralReasonList\":null,\"otherReferralReason\":null,\"revisitDate\":null,\"vanID\":295,\"parkingPlaceID\":33,\"beneficiaryRegID\":31258599,\"benVisitID\":2747932,\"visitCode\":30029502747932,\"providerServiceMapID\":1717,\"createdBy\":\"Mokrong\",\"isSpecialist\":false},\"beneficiaryRegID\":31258599,\"providerServiceMapID\":1717,\"serviceID\":9,\"createdBy\":\"Mokrong\",\"benFlowID\":5615979,\"beneficiaryID\":335035627323,\"doctorFlag\":1,\"nurseFlag\":9,\"pharmacist_flag\":0,\"visitCode\":30029502747932,\"sessionID\":3,\"isSpecialist\":false}}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://assamuat.piramalswasthya.org/hwc-api/common/get/Case-sheet/printData",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "4c982b206687c49483e7f34f790f5ed4e909ded05d9b0b100d2e0e3ff680413c"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://assamuat.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://assamuat.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4OTIzNThiZi01YmFjLTQ0ZjUtOTZlZS03M2FjNzRlNGY3MTQiLCJpYXQiOjE3Njc4NDk0MTcsImV4cCI6MTc2Nzg3ODIxN30.mdBosdP1dLszHPjF3TTBAsw26OYBuBSS8C7W7xrzfEhTCgTat-VRMBT6hQiUxuCJefM3YSONckhGn2p-imWniA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"VisitCategory\":\"General OPD (QC)\",\"benFlowID\":5615979,\"benVisitID\":2747932,\"beneficiaryRegID\":31258599,\"visitCode\":30029502747932}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://assamuat.piramalswasthya.org/hwc-api/common/get/Case-sheet/printData",
+					"protocol": "https",
+					"host": [
+						"assamuat",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"common",
+						"get",
+						"Case-sheet",
+						"printData"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://assamuat.piramalswasthya.org/hwc-api/common/get/Case-sheet/printData' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: 4c982b206687c49483e7f34f790f5ed4e909ded05d9b0b100d2e0e3ff680413c' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI4OTIzNThiZi01YmFjLTQ0ZjUtOTZlZS03M2FjNzRlNGY3MTQiLCJpYXQiOjE3Njc4NDk0MTcsImV4cCI6MTc2Nzg3ODIxN30.mdBosdP1dLszHPjF3TTBAsw26OYBuBSS8C7W7xrzfEhTCgTat-VRMBT6hQiUxuCJefM3YSONckhGn2p-imWniA' \\\r\n  -H 'origin: https://assamuat.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://assamuat.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"VisitCategory\":\"General OPD (QC)\",\"benFlowID\":5615979,\"benVisitID\":2747932,\"beneficiaryRegID\":31258599,\"visitCode\":30029502747932}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://assamuat.piramalswasthya.org/hwc-api/labTechnician/save/LabTestResult",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "b5c0f6d1cbecd193abbc9948dcddc2437a00571fec55d08787d5321818dd1e8a"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://assamuat.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://assamuat.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI3MzliZmVjMi1hMDQ3LTQwOWYtYmRkMi1mZjFmNTY4Mzg3ZGYiLCJpYXQiOjE3Njc4NTQxNzIsImV4cCI6MTc2Nzg4Mjk3Mn0.9pKWg1wiIuTTlJFMR1CSQZVhtLn7_bhIRYIKQFf_G7oxRKsLkG05LFCqROJg7drlt9MJL15XoTpZXvRVxRd8YA"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"labTestResults\":[],\"radiologyTestResults\":[],\"labCompleted\":true,\"createdBy\":\"Mokrong\",\"doctorFlag\":2,\"nurseFlag\":9,\"beneficiaryRegID\":31258584,\"beneficiaryID\":287266870563,\"benFlowID\":5615964,\"visitID\":2747919,\"visitCode\":30029502747919,\"providerServiceMapID\":1717,\"specialist_flag\":null,\"vanID\":295,\"parkingPlaceID\":33}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://assamuat.piramalswasthya.org/hwc-api/labTechnician/save/LabTestResult",
+					"protocol": "https",
+					"host": [
+						"assamuat",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"hwc-api",
+						"labTechnician",
+						"save",
+						"LabTestResult"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://assamuat.piramalswasthya.org/hwc-api/labTechnician/save/LabTestResult' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: b5c0f6d1cbecd193abbc9948dcddc2437a00571fec55d08787d5321818dd1e8a' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI3MzliZmVjMi1hMDQ3LTQwOWYtYmRkMi1mZjFmNTY4Mzg3ZGYiLCJpYXQiOjE3Njc4NTQxNzIsImV4cCI6MTc2Nzg4Mjk3Mn0.9pKWg1wiIuTTlJFMR1CSQZVhtLn7_bhIRYIKQFf_G7oxRKsLkG05LFCqROJg7drlt9MJL15XoTpZXvRVxRd8YA' \\\r\n  -H 'origin: https://assamuat.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://assamuat.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"labTestResults\":[],\"radiologyTestResults\":[],\"labCompleted\":true,\"createdBy\":\"Mokrong\",\"doctorFlag\":2,\"nurseFlag\":9,\"beneficiaryRegID\":31258584,\"beneficiaryID\":287266870563,\"benFlowID\":5615964,\"visitID\":2747919,\"visitCode\":30029502747919,\"providerServiceMapID\":1717,\"specialist_flag\":null,\"vanID\":295,\"parkingPlaceID\":33}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://assamuat.piramalswasthya.org/aam-inventory/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "priority",
+						"value": "u=0, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://assamuat.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "document"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "navigate"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "sec-fetch-user",
+						"value": "?1"
+					},
+					{
+						"key": "upgrade-insecure-requests",
+						"value": "1"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI3MzliZmVjMi1hMDQ3LTQwOWYtYmRkMi1mZjFmNTY4Mzg3ZGYiLCJpYXQiOjE3Njc4NTQxNzIsImV4cCI6MTc2Nzg4Mjk3Mn0.9pKWg1wiIuTTlJFMR1CSQZVhtLn7_bhIRYIKQFf_G7oxRKsLkG05LFCqROJg7drlt9MJL15XoTpZXvRVxRd8YA"
+					}
+				],
+				"url": {
+					"raw": "https://assamuat.piramalswasthya.org/aam-inventory/",
+					"protocol": "https",
+					"host": [
+						"assamuat",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"aam-inventory",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl 'https://assamuat.piramalswasthya.org/aam-inventory/' \\\r\n  -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI3MzliZmVjMi1hMDQ3LTQwOWYtYmRkMi1mZjFmNTY4Mzg3ZGYiLCJpYXQiOjE3Njc4NTQxNzIsImV4cCI6MTc2Nzg4Mjk3Mn0.9pKWg1wiIuTTlJFMR1CSQZVhtLn7_bhIRYIKQFf_G7oxRKsLkG05LFCqROJg7drlt9MJL15XoTpZXvRVxRd8YA' \\\r\n  -H 'priority: u=0, i' \\\r\n  -H 'referer: https://assamuat.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: document' \\\r\n  -H 'sec-fetch-mode: navigate' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'sec-fetch-user: ?1' \\\r\n  -H 'upgrade-insecure-requests: 1' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://assamuat.piramalswasthya.org/inventory-api/patientIssue",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "a8503492b670298b35f940a2dacac74e64ac8812d5a85bc90cab722f64f2babc"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://assamuat.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://assamuat.piramalswasthya.org/aam-inventory/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI1MDdmNzJmYi02ZTkzLTQ3OWEtOWJmNC02YTc0YTE5NzYzOGUiLCJpYXQiOjE3Njc4NTQ0MjgsImV4cCI6MTc2Nzg4MzIyOH0.AiSx0lr0tQsOfzkNQcFnJ8CYKEXyGdGKDwiwQF8Wp9fBmZK32ttuzLkpDDjK2QBgaGnkV0QbJDl7abjzDC52Kg"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"issuedBy\":\"MMU\",\"itemStockExit\":[],\"visitCode\":\"30029502747932\",\"facilityID\":278,\"facilityName\":\"MokrongTE\",\"age\":32,\"beneficiaryID\":335035627323,\"benRegID\":31258599,\"createdBy\":\"Mokrong\",\"providerServiceMapID\":1717,\"doctorName\":\"Mokrong\",\"gender\":\"Female\",\"issueType\":\"Manual\",\"patientName\":\"Pratiksha\",\"prescriptionID\":2803044,\"reference\":\"Prescribed by  Mokrong from MMU\",\"visitID\":2747932,\"visitDate\":\"Jan 8, 2026, 11:26:03 AM\",\"vanID\":null,\"parkingPlaceID\":null}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://assamuat.piramalswasthya.org/inventory-api/patientIssue",
+					"protocol": "https",
+					"host": [
+						"assamuat",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"inventory-api",
+						"patientIssue"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://assamuat.piramalswasthya.org/inventory-api/patientIssue' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization: a8503492b670298b35f940a2dacac74e64ac8812d5a85bc90cab722f64f2babc' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiI1MDdmNzJmYi02ZTkzLTQ3OWEtOWJmNC02YTc0YTE5NzYzOGUiLCJpYXQiOjE3Njc4NTQ0MjgsImV4cCI6MTc2Nzg4MzIyOH0.AiSx0lr0tQsOfzkNQcFnJ8CYKEXyGdGKDwiwQF8Wp9fBmZK32ttuzLkpDDjK2QBgaGnkV0QbJDl7abjzDC52Kg' \\\r\n  -H 'origin: https://assamuat.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://assamuat.piramalswasthya.org/aam-inventory/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"issuedBy\":\"MMU\",\"itemStockExit\":[],\"visitCode\":\"30029502747932\",\"facilityID\":278,\"facilityName\":\"MokrongTE\",\"age\":32,\"beneficiaryID\":335035627323,\"benRegID\":31258599,\"createdBy\":\"Mokrong\",\"providerServiceMapID\":1717,\"doctorName\":\"Mokrong\",\"gender\":\"Female\",\"issueType\":\"Manual\",\"patientName\":\"Pratiksha\",\"prescriptionID\":2803044,\"reference\":\"Prescribed by  Mokrong from MMU\",\"visitID\":2747932,\"visitDate\":\"Jan 8, 2026, 11:26:03 AM\",\"vanID\":null,\"parkingPlaceID\":null}'"
+			},
+			"response": []
+		},
+		{
+			"name": "https://assamuat.piramalswasthya.org/common-api/user/userAuthenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": ""
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://assamuat.piramalswasthya.org"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://assamuat.piramalswasthya.org/aam/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-origin"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "Cookie",
+						"value": "Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiIwZGM3NjBiYi1hOWEwLTQ1OWItOGMwZS0yOTBlNmFmODYzMzQiLCJpYXQiOjE3Njc4NTU3ODgsImV4cCI6MTc2Nzg4NDU4OH0.xw0RS04pT6y8x555r0_Q3RSf60S3sDoL8yzAxKxZm_Ab6D3_hljGjnDsGMhdQHLxt2zpi_Z8y_e3vYCrcNtL2g"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"userName\":\"mokrongs\",\"password\":\"b77de767f46a16732672d9ac95f86fbff5b0ea7524aca9ee270e0c11ffdead5dd65117b27e08a097e3a8b045e04a0937WRSG78K6bwoQkuH9ZX0Phw==\",\"doLogout\":false,\"withCredentials\":true}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://assamuat.piramalswasthya.org/common-api/user/userAuthenticate",
+					"protocol": "https",
+					"host": [
+						"assamuat",
+						"piramalswasthya",
+						"org"
+					],
+					"path": [
+						"common-api",
+						"user",
+						"userAuthenticate"
+					]
+				},
+				"description": "Generated from cURL: curl 'https://assamuat.piramalswasthya.org/common-api/user/userAuthenticate' \\\r\n  -H 'accept: application/json, text/plain, */*' \\\r\n  -H 'accept-language: en-US,en;q=0.9' \\\r\n  -H 'authorization;' \\\r\n  -H 'content-type: application/json' \\\r\n  -b 'Jwttoken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtb2tyb25nIiwidXNlcklkIjoiMTk1MSIsInRva2VuX3R5cGUiOiJhY2Nlc3MiLCJqdGkiOiIwZGM3NjBiYi1hOWEwLTQ1OWItOGMwZS0yOTBlNmFmODYzMzQiLCJpYXQiOjE3Njc4NTU3ODgsImV4cCI6MTc2Nzg4NDU4OH0.xw0RS04pT6y8x555r0_Q3RSf60S3sDoL8yzAxKxZm_Ab6D3_hljGjnDsGMhdQHLxt2zpi_Z8y_e3vYCrcNtL2g' \\\r\n  -H 'origin: https://assamuat.piramalswasthya.org' \\\r\n  -H 'priority: u=1, i' \\\r\n  -H 'referer: https://assamuat.piramalswasthya.org/aam/' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  -H 'sec-fetch-dest: empty' \\\r\n  -H 'sec-fetch-mode: cors' \\\r\n  -H 'sec-fetch-site: same-origin' \\\r\n  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  --data-raw '{\"userName\":\"mokrongs\",\"password\":\"b77de767f46a16732672d9ac95f86fbff5b0ea7524aca9ee270e0c11ffdead5dd65117b27e08a097e3a8b045e04a0937WRSG78K6bwoQkuH9ZX0Phw==\",\"doLogout\":false,\"withCredentials\":true}'"
+			},
+			"response": []
+		}
+	]
+}
