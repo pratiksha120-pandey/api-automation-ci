@@ -1,0 +1,17 @@
+{
+  "name": "api-automation-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-html": "^1.0.5"
+  }
+}
