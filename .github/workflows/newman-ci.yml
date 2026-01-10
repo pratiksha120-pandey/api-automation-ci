@@ -5,6 +5,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  schedule:
+    - cron: '30 3 * * *'   # Daily at 9:00 AM IST (3:30 UTC)
 
 jobs:
   run-newman:
@@ -22,8 +24,16 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Postman collection
+      - name: Run Postman collection with HTML report
         run: |
+          mkdir -p reports
           npx newman run HWC.postman_collection.json \
           -e Assam-UAT.postman_environment.json \
-          --reporters cli
+          --reporters cli,html \
+          --reporter-html-export reports/newman-report.html
+
+      - name: Upload Newman HTML Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: newman-html-report
+          path: reports/newman-report.html
