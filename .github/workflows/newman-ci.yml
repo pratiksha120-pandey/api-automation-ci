@@ -1,12 +1,10 @@
-name: Newman API Automation
+name: API Automation with Newman
 
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   schedule:
-    - cron: '30 3 * * *'   # Daily at 9:00 AM IST (3:30 UTC)
+    - cron: '30 3 * * *'   # Daily at 9:00 AM IST (03:30 UTC)
 
 jobs:
   run-newman:
@@ -24,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Postman collection with HTML report
+      - name: Run API Tests with Newman
         run: |
           mkdir -p reports
           npx newman run HWC.postman_collection.json \
@@ -37,3 +35,53 @@ jobs:
         with:
           name: newman-html-report
           path: reports/newman-report.html
+
+      # ---------- MAIL ON FAILURE ----------
+      - name: Send Email if API Tests Fail
+        if: failure()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "❌ API Automation Failed - Newman Report"
+          body: |
+            Hi,
+
+            The API automation run has FAILED.
+            Please check the GitHub Actions logs and download the Newman HTML report.
+
+            Repository: ${{ github.repository }}
+            Workflow: ${{ github.workflow }}
+            Run ID: ${{ github.run_id }}
+
+            Thanks,
+            GitHub Actions
+          to: yourmail@gmail.com
+          from: GitHub Actions
+
+      # ---------- MAIL ON SUCCESS ----------
+      - name: Send Email if API Tests Pass
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: "✅ API Automation Passed - Newman Report"
+          body: |
+            Hi,
+
+            The API automation run has PASSED successfully.
+            You can download the Newman HTML report from the GitHub Actions artifacts.
+
+            Repository: ${{ github.repository }}
+            Workflow: ${{ github.workflow }}
+            Run ID: ${{ github.run_id }}
+
+            Thanks,
+            GitHub Actions
+          to: pratikshapiramal122@gmail.com
+          from: GitHub Actions
