@@ -58,8 +58,9 @@ jobs:
 
             Thanks,
             GitHub Actions
-          to: pratikshapiramal122@gmail.com
+          to: pratikshapiramal122@gmail.com, archita.verma@piramalswasthya.org
           from: GitHub Actions
+          attachments: reports/newman-report.html
 
       # ---------- MAIL ON SUCCESS ----------
       - name: Send Email if API Tests Pass
@@ -83,5 +84,6 @@ jobs:
 
             Thanks,
             GitHub Actions
-          to: pratikshapiramal122@gmail.com
+          to: pratikshapiramal122@gmail.com, archita.verma@piramalswasthya.org
           from: GitHub Actions
+          attachments: reports/newman-report.html
