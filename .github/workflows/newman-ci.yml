@@ -57,7 +57,7 @@ jobs:
 
             Thanks,
             Automation System
-          to: pratiksha.pandey@gmail.com, qa.team@company.com
+          to: pratikshapiramal122@gmail.com
           from: GitHub Actions
           attachments: reports/newman-report.html
 
@@ -79,6 +79,6 @@ jobs:
 
             Thanks,
             Automation System
-          to: pratiksha.pandey@gmail.com, qa.team@company.com
+          to: pratikshapiramal122@gmail.com
           from: GitHub Actions
           attachments: reports/newman-report.html
