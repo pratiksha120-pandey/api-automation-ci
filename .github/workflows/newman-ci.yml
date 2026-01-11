@@ -4,14 +4,14 @@ on:
   push:
     branches: [ "main" ]
   schedule:
-    - cron: '30 3 * * *'   # Daily at 9:00 AM IST (03:30 UTC)
+    - cron: '30 3 * * *'   # Daily at 9:00 AM IST
 
 jobs:
   run-newman:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
       - name: Run API Tests with Newman
@@ -28,7 +28,10 @@ jobs:
           npx newman run HWC.postman_collection.json \
           -e Assam-UAT.postman_environment.json \
           --reporters cli,htmlextra \
-          --reporter-htmlextra-export reports/newman-report.html
+          --reporter-htmlextra-export reports/newman-report.html \
+          --reporter-htmlextra-showOnlyFails false \
+          --reporter-htmlextra-logs true \
+          --reporter-htmlextra-title "API Automation Test Report"
 
       - name: Upload Newman HTML Report
         uses: actions/upload-artifact@v4
@@ -36,8 +39,8 @@ jobs:
           name: newman-html-report
           path: reports/newman-report.html
 
-      # ---------- MAIL ON FAILURE ----------
-      - name: Send Email if API Tests Fail
+      # ---------------- MAIL ON FAILURE ----------------
+      - name: Send Mail on Failure (HTML Attached)
         if: failure()
         uses: dawidd6/action-send-mail@v3
         with:
@@ -45,25 +48,21 @@ jobs:
           server_port: 587
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "❌ API Automation Failed - Newman Report"
+          subject: "❌ API Automation Failed - HTML Report Attached"
           body: |
-            Hi,
+            Hi Team,
 
             The API automation run has FAILED.
-            Please check the GitHub Actions logs and download the Newman HTML report.
-
-            Repository: ${{ github.repository }}
-            Workflow: ${{ github.workflow }}
-            Run ID: ${{ github.run_id }}
+            Please find the attached Newman HTML report for details.
 
             Thanks,
-            GitHub Actions
-          to: pratikshapiramal122@gmail.com, archita.verma@piramalswasthya.org
+            Automation System
+          to: pratiksha.pandey@gmail.com, qa.team@company.com
           from: GitHub Actions
           attachments: reports/newman-report.html
 
-      # ---------- MAIL ON SUCCESS ----------
-      - name: Send Email if API Tests Pass
+      # ---------------- MAIL ON SUCCESS ----------------
+      - name: Send Mail on Success (HTML Attached)
         if: success()
         uses: dawidd6/action-send-mail@v3
         with:
@@ -71,19 +70,15 @@ jobs:
           server_port: 587
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "✅ API Automation Passed - Newman Report"
+          subject: "✅ API Automation Passed - HTML Report Attached"
           body: |
-            Hi,
+            Hi Team,
 
             The API automation run has PASSED successfully.
-            You can download the Newman HTML report from the GitHub Actions artifacts.
-
-            Repository: ${{ github.repository }}
-            Workflow: ${{ github.workflow }}
-            Run ID: ${{ github.run_id }}
+            Please find the attached Newman HTML report.
 
             Thanks,
-            GitHub Actions
-          to: pratikshapiramal122@gmail.com, archita.verma@piramalswasthya.org
+            Automation System
+          to: pratiksha.pandey@gmail.com, qa.team@company.com
           from: GitHub Actions
           attachments: reports/newman-report.html
