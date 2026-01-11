@@ -58,7 +58,7 @@ jobs:
 
             Thanks,
             GitHub Actions
-          to: yourmail@gmail.com
+          to: pratikshapiramal122@gmail.com
           from: GitHub Actions
 
       # ---------- MAIL ON SUCCESS ----------
